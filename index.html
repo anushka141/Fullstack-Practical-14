@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>COUNTER</h1>
+        <div class="container">
+            <button onclick="decrement()">-</button>
+            <h2 id="value"></h2>
+            <button onclick="increment()">+</button>
+        </div>
+    </div>
+
+    <script>
+        var change = 0;
+        var x = document.getElementById('value');
+        x.innerText = change;
+        function decrement() {
+            if (change > 0) {
+
+
+                change = change - 1;
+                x.innerText = change;
+            }
+        }
+        function increment() {
+            change = change + 1;
+            x.innerText = change;
+        }
+        
+
+    </script>
+</body>
+
+</html>
